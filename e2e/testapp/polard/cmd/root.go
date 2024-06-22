@@ -54,7 +54,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/types"
 )
 
-// NewRootCmd creates a new root command for simd. It is called once in the main function.
+// NewRootCmd creates a new root command for prysmd. It is called once in the main function.
 //
 
 func NewRootCmd() *cobra.Command {
@@ -91,8 +91,8 @@ func NewRootCmd() *cobra.Command {
 	ethcryptocodec.RegisterInterfaces(clientCtx.InterfaceRegistry)
 
 	rootCmd := &cobra.Command{
-		Use:           "polard",
-		Short:         "node daemon and CLI for interacting with a polaris node",
+		Use:           "prysmd",
+		Short:         "node daemon and CLI for interacting with a polaris EVM-node",
 		SilenceErrors: true,
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			var err error

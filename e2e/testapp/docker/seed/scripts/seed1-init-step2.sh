@@ -19,7 +19,7 @@
 # TITLE.
 
 if [ -z "$CHAINID" ]; then
-    CHAINID="brickchain-666"
+    CHAINID="prysm-7007"
 fi
 if [ -z "$KEYRING" ]; then
     KEYRING="test"
@@ -30,9 +30,9 @@ fi
 
 KEY="$1"
 
-polard genesis add-genesis-account $KEY 100000000000000000000000000abera,100000000000000000000000000stgusdc --keyring-backend $KEYRING --home "$HOMEDIR"
+polard genesis add-genesis-account $KEY 100000000000000000000000000prysm,100000000000000000000000000stgusdc --keyring-backend $KEYRING --home "$HOMEDIR"
 
-polard genesis gentx $KEY 1000000000000000000000abera --keyring-backend $KEYRING --chain-id $CHAINID --home "$HOMEDIR" \
+polard genesis gentx $KEY 1000000000000000000000prysm --keyring-backend $KEYRING --chain-id $CHAINID --home "$HOMEDIR" \
     --moniker="$KEY" \
     --identity="identity of $KEY" \
     --details="This is $KEY" \
