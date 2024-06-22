@@ -1,6 +1,4 @@
-## 🚧 WARNING: THIS PROJECT IS DEPRECATED 🚧
 
-This project is deprecated. If you are interested in maintaining it, please contact itsdevbear on GitHub or Twitter.
 
 
 <h1 align="center"> Polaris Monorepo ❄️🔭 </h1>
