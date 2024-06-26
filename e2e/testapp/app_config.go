@@ -114,7 +114,7 @@ var (
 //nolint:funlen // long config
 func MakeAppConfig(bech32Prefix string) depinject.Config {
 	if len(bech32Prefix) == 0 {
-		bech32Prefix = "cosmos"
+		bech32Prefix = "prysm"
 	}
 	return depinject.Configs(appconfig.Compose(&appv1alpha1.Config{
 		Modules: []*appv1alpha1.ModuleConfig{
